@@ -1,4 +1,3 @@
-/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +22,21 @@ header {
     width: 100%;
     top: 0;
     z-index: 100;
+    animation-name: medo;
+    animation-duration: 5s;
 }
+
+  @keyframes medo  {
+   0%{
+  background-color: #e0e0e0;
+  width: 0%;
+    }
+    100%{
+background-color: #000;
+width: 100%;
+    }
+
+  }
 
 .logo img {
     height: 70px;
@@ -49,14 +61,13 @@ nav ul li a:hover {
     color: #010a89;
 }
 
-/* Hero section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #e0e0e0;
     padding: 5rem 2rem;
-    margin-top: 80px; /* Account for fixed header */
+    margin-top: 80px; 
     min-height: 60vh;
 }
 
@@ -96,7 +107,6 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-/* About section */
 .about {
     padding: 4rem 2rem;
     text-align: center;
@@ -119,9 +129,20 @@ nav ul li a:hover {
     max-width: 600px;
     height: auto;
     border-radius: 10px;
+    animation-name: mmm;
+    animation-duration: 5s;
+}
+@keyframes mmm  {
+   0%{
+  background-color: #e0e0e0;
+  width: 0%;
+    }
+    100%{
+background-color: #000;
+width: 100%;
+    }
 }
 
-/* Models section */
 .models {
     padding: 4rem 2rem;
     background-color: #f4f4f4;
@@ -162,7 +183,6 @@ nav ul li a:hover {
     color: #666;
 }
 
-/* Footer */
 footer {
     background-color: #000;
     color: #fff;
@@ -180,7 +200,6 @@ footer {
     text-decoration: underline;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;
